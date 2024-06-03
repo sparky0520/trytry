@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.contact{
+    position:relative;
+    min-height:80vh;
+    padding: 50px, 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffff;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.contact .content h2{
+    font-size: 50px;
+    font-weight: 800;
+    color: #333;
+}
+
+.contact .content p{
+    font-weight: 200;
+    color:#333;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    font-weight: 100px;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    /* background-color: #ffff; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display:flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #3d3b3b;
+    flex-direction: column;
+    font-weight:
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #333;
+}
+
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: rgb(243, 195, 106);
+    border-radius: 30px;
+    box-shadow: 10px 10px 3px rgb(126, 126, 120);
+}
+
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactform .inputBox{
+    position:relative;
+    width:100%;
+    margin-top: 10px;
+}
+
+.contactform .inputBox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline:none; 
+}
+
+.contactform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline:none; 
+    resize:none;
+}
+
+.contactform .inputBox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    color:#666;
+}
+
+
+#button{
+    padding-top:5px;
+    border-radius:2px;
+}
+
+#but{
+    padding:5px;
+    border-radius: 8px;
+    background: rgb(34, 145, 34);
+    color: #ffff;
+    width: 100px;
+    display:flex;
+    justify-content: center;
+}
