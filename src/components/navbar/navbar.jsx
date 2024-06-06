@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <div className='nav'>
-            <div className='nav-logo' onClick={() => handleNavigation('/home')}>Hello</div>
+            <div className='nav-logo' onClick={() => handleNavigation('/home')}>9MM</div>
             <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
                 <div></div>
                 <div></div>
