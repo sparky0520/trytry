@@ -11,8 +11,8 @@ import { BrowserRouter as Router, Routes, Route,Link} from "react-router-dom"
 const App = () => {
   let heroData= [
     {text1: "Dive into", text2: "What you love"},
-    {text1: "Indulging", text2: "your passions"},
-    {text1: "Give in to", text2: "your passions"},
+    {text1: "Embrace", text2: "Your passions"},
+    {text1: "Indulge in", text2: "Your desires"},
 
   ]
   const [heroCount,setHeroCount] = useState(2);

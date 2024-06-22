@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import './hero.css';
 import arrow_btn from '../../assets/arrow_btn.png';
 import play_icon from '../../assets/play_icon.png';
@@ -7,6 +8,16 @@ const Hero = ({ setPlayStatus, heroCount, setHeroCount, heroData, playStatus }) 
     const handleExploreClick = () => {
         window.location.href = "/explore";
     };
+
+    // Implementing auto slider - Called every time the hero count changes
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setHeroCount(prevCount => (prevCount + 1) % 3);
+        }, 5000); // Change slide every 5 seconds
+
+        // Clear timer on unmount
+        return () => clearInterval(timer);
+    }, [setHeroCount]);
 
     return (
         <div className='hero'>
