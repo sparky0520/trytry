@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Bg from "./components/main1/main1.jsx";
 import Nav from "./components/navbar/navbar.jsx";
 import Hero from "./components/hero/hero.jsx";
@@ -6,7 +6,7 @@ import Home from "./components/home/home.jsx";
 import Contact from "./components/contactus/contact.jsx";
 import About from "./components/aboutus/aboutus.jsx";
 
-import { BrowserRouter as Router, Routes, Route,Link} from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 const App = () => {
   let heroData= [
@@ -27,7 +27,7 @@ const App = () => {
         <Nav/>
         
         
-        {location.pathname === "/home" && (
+        {location.pathname === "/" && (
           <Hero
             setPlayStatus={setPlayStatus}
             heroData={heroData[heroCount]}
@@ -39,7 +39,7 @@ const App = () => {
         
         
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
             {location.pathname === "/contact" && (
               <Route path="/contact" element={<Contact />} />
             )}

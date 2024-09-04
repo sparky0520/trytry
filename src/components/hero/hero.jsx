@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './hero.css';
 import arrow_btn from '../../assets/arrow_btn.png';
 import play_icon from '../../assets/play_icon.png';

@@ -14,14 +14,14 @@ const Navbar = () => {
 
     return (
         <div className='nav'>
-            <div className='nav-logo' onClick={() => handleNavigation('/home')}>9MM</div>
+            <div className='nav-logo' onClick={() => handleNavigation('/')}>9MM</div>
             <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
             <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
-                <li onClick={() => handleNavigation('/home')}>Home</li>
+                <li onClick={() => handleNavigation('/')}>Home</li>
                 <li onClick={() => handleNavigation('/explore')}>Explore</li>
                 <li onClick={() => handleNavigation('/about')}>About</li>
                 <li className='nav-contact' onClick={() => handleNavigation('/contact')}>Contact</li>
